@@ -144,7 +144,9 @@ for (i in seq_along(files)) {
 # -------------------------------------------------------------------------
 
 biogasoutcomes <- output_list |>
-  bind_rows()
+  bind_rows() |>
+  select(interview_id, interview_date, question_id, interviewer, interviewee)
+
 
 usethis::use_data(biogasoutcomes, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
