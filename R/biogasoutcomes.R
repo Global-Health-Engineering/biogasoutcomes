@@ -1,6 +1,9 @@
 #' Qualitative interviews about the outcomes of biogas projects in Malawi
 #'
-#' TODO: More detailed description
+#' This dataset consists of 61 semi-structured interviews with biogas
+#' owners in the Southern Region of Malawi. Interviews were conducted over
+#' multiple visits to sites over the course of a two-year period between
+#' June 2021 and October 2022.
 #'
 #' @format A tibble with 259 rows and 5 variables:
 #' \describe{
