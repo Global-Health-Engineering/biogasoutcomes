@@ -28,13 +28,6 @@ files <- list.files(path = "data", pattern = "*.md", full.names = TRUE)
 
 markdown_text <- list()
 
-for (i in seq_along(files)) {
-    markdown_text[[i]] <- readLines(files[[i]])
-}
-
-# Read the markdown file
-# markdown_text <- readLines("data/01_2021-05-31.md")
-
 # Initialize an empty vector for the text strings
 text_strings <- c()
 
@@ -61,45 +54,42 @@ for (i in seq_along(files)) {
     text_strings_list[[i]] <- text_strings
 }
 
-tibble::tibble(text = text_strings_list[[1]]) |> View()
 
-
-
-# trial -------------------------------------------------------------------
-
-
-# trial end ---------------------------------------------------------------
-
-
+text_tibble_list <- map(text_strings_list, ~tibble(text = .))
 
 # Create a one-column tibble with the text strings
 
-text_tibble <- tibble::tibble(text = text_strings)
-
-tib <- text_tibble |> 
-    mutate(interviewer = case_when(
-        str_detect(text, "Interviewer") == TRUE ~ TRUE
-    )) |> 
-    mutate(interviewee = case_when(
-        str_detect(text, "Interviewee") == TRUE ~ TRUE
-    )) |> 
-    filter(!(is.na(interviewer) & is.na(interviewee))) 
-
-
-# Identify the row where TRUE follows TRUE in the interviewer variable
-index_interviewer <- which(lag(tib$interviewer) == TRUE & tib$interviewer == TRUE)
-
-if (length(index_interviewer) > 0) {
-    stop("Check input file to see if value for interviewer was repeated")
+identify_person <- function(x) {
+    
+    x |> 
+        mutate(interviewer = case_when(
+            str_detect(text, "Interviewer") == TRUE ~ TRUE
+        )) |> 
+        mutate(interviewee = case_when(
+            str_detect(text, "Interviewee") == TRUE ~ TRUE
+        )) |> 
+        filter(!(is.na(interviewer) & is.na(interviewee))) 
 }
 
-# Identify the row where TRUE follows TRUE in the interviewer variable
-index_interviewee <- which(lag(tib$interviewee) == TRUE & tib$interviewee == TRUE)
+text_tibble_list_person <- map(text_tibble_list, identify_person)
 
-if (length(index_interviewee) > 0) {
-    stop("Check input file to see if value for interviewee was repeated")
+check_errors <- function(x) {
+    index_interviewer <- which(lag(x$interviewer) == TRUE & x$interviewer == TRUE)
+    
+    if (length(index_interviewer) > 0) {
+        print(paste("Issue at lines", index_interviewer))
+        stop("Check input file to see if value for interviewer was repeated")
+    }
+    
+    # Identify the row where TRUE follows TRUE in the interviewer variable
+    index_interviewee <- which(lag(x$interviewee) == TRUE & x$interviewee == TRUE)
+    
+    if (length(index_interviewee) > 0) {
+        stop("Check input file to see if value for interviewee was repeated")
+    }
 }
 
+map(text_tibble_list_person, check_errors)
 
 # -------------------------------------------------------------------------
 
