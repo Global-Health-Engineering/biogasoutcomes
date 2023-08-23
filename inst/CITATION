@@ -1,0 +1,17 @@
+
+bibentry(bibtype = "Misc",
+         key = "schobitzkalina:2023",
+         title = "biogasoutcomes: Data for 61 semi-structured interviews with biogas owners in Malawi",
+         author = c(person(given = "Lars",
+                           family = "Schöbitz"),
+                    person(given = "Marc",
+                           family = "Kalina"),
+                    person(given = "Jonathan Olal",
+                           family = "Ogwang"),
+                    person(given = "Jonathan",
+                           family = "Kwangulero"),
+                    person(given = "Elizabeth",
+                           family = "Tilley")),
+         year = "2023",
+         abstract = "This dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.",
+         version = "0.0.0.9000")

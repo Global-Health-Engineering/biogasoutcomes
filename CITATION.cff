@@ -1,0 +1,72 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "biogasoutcomes" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'biogasoutcomes: Data for 61 semi-structured interviews with biogas owners
+  in Malawi'
+version: 0.0.0.9000
+abstract: This dataset consists of 61 semi-structured interviews with biogas owners
+  in the Southern Region of Malawi. Interviews were conducted over multiple visits
+  to sites over the course of a two-year period between June 2021 and October 2022.
+authors:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+- family-names: Kalina
+  given-names: Marc
+  email: mkalina@ethz.ch
+  orcid: https://orcid.org/0000-0002-6335-3845
+- family-names: Ogwang
+  given-names: Jonathan Olal
+  email: jonathan.ogwang@usys.ethz.ch
+  orcid: https://orcid.org/0000-0002-7656-1897
+- family-names: Kwangulero
+  given-names: Jonathan
+  email: kwangulero@gmail.com
+  orcid: https://orcid.org/0000-0002-4050-5121
+- family-names: Tilley
+  given-names: Elizabeth
+  email: tilleye@ethz.ch
+  orcid: https://orcid.org/0000-0002-2095-9724
+preferred-citation:
+  type: generic
+  title: 'biogasoutcomes: Data for 61 semi-structured interviews with biogas owners
+    in Malawi'
+  authors:
+  - family-names: Schöbitz
+    given-names: Lars
+    email: lschoebitz@ethz.ch
+    orcid: https://orcid.org/0000-0003-2196-5015
+  - family-names: Kalina
+    given-names: Marc
+    email: mkalina@ethz.ch
+    orcid: https://orcid.org/0000-0002-6335-3845
+  - family-names: Ogwang
+    given-names: Jonathan Olal
+    email: jonathan.ogwang@usys.ethz.ch
+    orcid: https://orcid.org/0000-0002-7656-1897
+  - family-names: Kwangulero
+    given-names: Jonathan
+    email: kwangulero@gmail.com
+    orcid: https://orcid.org/0000-0002-4050-5121
+  - family-names: Tilley
+    given-names: Elizabeth
+    email: tilleye@ethz.ch
+    orcid: https://orcid.org/0000-0002-2095-9724
+  year: '2023'
+  abstract: This dataset consists of 61 semi-structured interviews with biogas owners
+    in the Southern Region of Malawi. Interviews were conducted over multiple visits
+    to sites over the course of a two-year period between June 2021 and October 2022.
+  version: 0.0.0.9000
+date-released: '2023-08-23'
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
