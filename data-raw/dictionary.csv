@@ -1,0 +1,7 @@
+directory, file_name, variable_name, variable_type, description
+data, biogasoutcomes.rda, interview_id, character, The site id where the interview was performed.
+data, biogasoutcomes.rda, interview_date, date, The date on which the interview was performed.
+data, biogasoutcomes.rda, question_id, integer, The number of the question within each interview. Note: Number of questions differ between interviews.
+data, biogasoutcomes.rda, interviewer, character, The question asked by the interviewer.
+data, biogasoutcomes.rda, interviewee, character, The answer given by the interviewee.
+
