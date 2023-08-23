@@ -3,7 +3,7 @@
 \docType{data}
 \name{biogasoutcomes}
 \alias{biogasoutcomes}
-\title{Qualitative interviews about the outcomes of biogas projects in Malawi}
+\title{Qualitative interviews about the outcomes of biogas reactors in Malawi}
 \format{
 A tibble with 259 rows and 5 variables:
 \describe{
