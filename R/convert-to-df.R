@@ -28,9 +28,6 @@ files <- list.files(path = "data", pattern = "*.md", full.names = TRUE)
 
 markdown_text <- list()
 
-# Initialize an empty vector for the text strings
-text_strings <- c()
-
 # Initialize an empty list for the text string vectors
 text_strings_list <- list()
 
@@ -38,6 +35,7 @@ text_strings_list <- list()
 current_string <- ""
 
 for (i in seq_along(files)) {
+    text_strings <- c()
     markdown_text[[i]] <- readLines(files[[i]])
     # Iterate through the lines of the markdown file
     for (line in markdown_text[[i]]) {
@@ -138,3 +136,4 @@ for (i in seq_along(files)) {
 
 output_df <- output_list |> 
     bind_rows()
+
