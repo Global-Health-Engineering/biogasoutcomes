@@ -1,4 +1,4 @@
-#' Qualitative interviews about the outcomes of biogas projects in Malawi
+#' Qualitative interviews about the outcomes of biogas reactors in Malawi
 #'
 #' This dataset consists of 61 semi-structured interviews with biogas
 #' owners in the Southern Region of Malawi. Interviews were conducted over
