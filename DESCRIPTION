@@ -1,15 +1,30 @@
 Package: biogasoutcomes
-Title: What the Package Does (One Line, Title Case)
+Title: Data for 61 semi-structured interviews with biogas owners in Malawi
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2196-5015")),
+    person("Sebastian Camilo", "Loos", , "seba.loos@hotmail.com", role = "ctr",
+           comment = c(ORCID = "0000-0002-8830-1734")),
+    person("Marc", "Kalina", , "mkalina@ethz.ch", role = "aut",
+           comment = c(ORCID = "0000-0002-6335-3845")),
+    person("Jonathan Olal", "Ogwang", , "jonathan.ogwang@usys.ethz.ch", role = "aut",
+           comment = c(ORCID = "0000-0002-7656-1897")),
+    person("Jonathan", "Kwangulero", , "kwangulero@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-4050-5121")),
+    person("Elizabeth", "Tilley", , "tilleye@ethz.ch", role = "aut",
+           comment = c(ORCID = "0000-0002-2095-9724"))
+  )
+Description: This dataset consists of 61 semi-structured interviews with biogas 
+    owners in the Southern Region of Malawi. Interviews were conducted over 
+    multiple visits to sites over the course of a two-year period between 
+    June 2021 and October 2022.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true
+Language: en-GB
+Date: 2023-08-23
