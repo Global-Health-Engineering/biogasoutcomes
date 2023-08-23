@@ -93,28 +93,48 @@ map(text_tibble_list_person, check_errors)
 
 # -------------------------------------------------------------------------
 
-tib2 <- tib |> 
-    pivot_longer(cols = !text,
-                 names_to = "person",
-                 values_to = "value") |> 
-    filter(value == TRUE) |> 
-    select(-value) |> 
-    mutate(text = str_remove(text, fixed(" **Interviewer:** "))) |> 
-    mutate(text = str_remove(text, fixed(" **Interviewee:** ")))
+text_tibble_list_person
+
+tidy_text <- function(x) {
+    x |> 
+        pivot_longer(cols = !text,
+                     names_to = "person",
+                     values_to = "value") |> 
+        filter(value == TRUE) |> 
+        select(-value) |> 
+        mutate(text = str_remove(text, fixed(" **Interviewer:** "))) |> 
+        mutate(text = str_remove(text, fixed(" **Interviewee:** ")))
+}
+
+text_tibble_list_person_tidy <- map(text_tibble_list_person, tidy_text)
+
+# -------------------------------------------------------------------------
+
+add_missing_values <- function(x) {
+    x |> 
+        pivot_wider(names_from = person,
+                    values_from = text, 
+                    values_fn = list) |> 
+        rectangularize() 
+}
+
+text_tibble_list_person_tidy_complete <- map(text_tibble_list_person_tidy, add_missing_values)
+
+# -------------------------------------------------------------------------
+
+output_list <- list()
+
+for (i in seq_along(files)) {
+    output_list[[i]] <- text_tibble_list_person_tidy_complete[[i]] |> 
+        mutate(interview_date = lubridate::ymd(
+            str_extract(files[[i]], "\\d{4}-\\d{2}-\\d{2}")
+        ),
+        interview_id = str_extract(files[[i]], "(?<=data/)\\d{2}"),
+        question_id = seq(1:n()))
+}
 
 
 # -------------------------------------------------------------------------
 
-tib3 <- tib2 |> 
-    pivot_wider(names_from = person,
-                values_from = text, 
-                values_fn = list) |> 
-    rectangularize() 
-
-
-# -------------------------------------------------------------------------
-
-tib4 <- tib3 |> 
-    mutate(interview_date = lubridate::ymd("2021-05-31"),
-           interview_id = 1,
-           question_id = seq(1:n()))
+output_df <- output_list |> 
+    bind_rows()
