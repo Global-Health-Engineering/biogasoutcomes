@@ -86,21 +86,27 @@ check_errors <- function(x) {
   if (length(index_interviewer) > 0) {
     print(paste("Issue at lines", index_interviewer))
     stop("Check input file to see if value for interviewer was repeated")
+    print("No issues with interviewer repition.")
+  } else {
+    print("No issues with interviewer repition.")
   }
 
   # Identify the row where TRUE follows TRUE in the interviewer variable
   index_interviewee <- which(lag(x$interviewee) == TRUE & x$interviewee == TRUE)
 
   if (length(index_interviewee) > 0) {
+    print(paste("Issue at lines", index_interviewee))
     stop("Check input file to see if value for interviewee was repeated")
+  } else {
+    print("No issues with interviewee repition.")
   }
 }
 
 map(text_tibble_list_person, check_errors)
 
-check_errors(text_tibble_list_person[[6]])
+check_errors(text_tibble_list_person[[10]])
 
-text_tibble_list_person[[6]] |> View()
+text_tibble_list_person[[10]] |> View()
 # -------------------------------------------------------------------------
 
 text_tibble_list_person
