@@ -6,7 +6,7 @@
 # code --------------------------------------------------------------------
 
 # Define the bash command
-bash_command <- 'find data -name "*.docx" -exec sh -c \'pandoc -f docx -t markdown "{}" -o "$(basename "{}" .docx).md"\' \\;'
+# bash_command <- 'find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "$0" -o "${0%.docx}.md"' {} \;'
 
 # Run the bash command from R
 system(bash_command)
