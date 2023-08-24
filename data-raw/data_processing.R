@@ -84,9 +84,7 @@ check_errors <- function(x) {
   index_interviewer <- which(lag(x$interviewer) == TRUE & x$interviewer == TRUE)
 
   if (length(index_interviewer) > 0) {
-    print(paste("Issue at lines", index_interviewer))
-    stop("Check input file to see if value for interviewer was repeated")
-    print("No issues with interviewer repition.")
+    print(paste("Interviewer: issue at line", index_interviewer))
   } else {
     print("No issues with interviewer repition.")
   }
@@ -95,18 +93,24 @@ check_errors <- function(x) {
   index_interviewee <- which(lag(x$interviewee) == TRUE & x$interviewee == TRUE)
 
   if (length(index_interviewee) > 0) {
-    print(paste("Issue at lines", index_interviewee))
-    stop("Check input file to see if value for interviewee was repeated")
+    print(paste("Interviewee: issue at line", index_interviewee))
   } else {
     print("No issues with interviewee repition.")
   }
+
+  if (length(index_interviewee) > 0 | length(index_interviewer) > 0) {
+    stop("Check input file to see were values are repeated.")
+  }
 }
+
 
 map(text_tibble_list_person, check_errors)
 
-check_errors(text_tibble_list_person[[10]])
+id <- 46
 
-text_tibble_list_person[[10]] |> View()
+check_errors(text_tibble_list_person[[id]])
+
+text_tibble_list_person[[id]] |> View()
 # -------------------------------------------------------------------------
 
 text_tibble_list_person
