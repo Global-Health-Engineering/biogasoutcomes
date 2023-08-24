@@ -45,6 +45,7 @@ current_string <- ""
 
 for (i in seq_along(files)) {
   text_strings <- c()
+  current_string <- ""
   markdown_text[[i]] <- readLines(files[[i]])
   # Iterate through the lines of the markdown file
   for (line in markdown_text[[i]]) {
@@ -60,7 +61,6 @@ for (i in seq_along(files)) {
   }
   text_strings_list[[i]] <- text_strings
 }
-
 
 text_tibble_list <- map(text_strings_list, ~tibble(text = .))
 
@@ -98,6 +98,9 @@ check_errors <- function(x) {
 
 map(text_tibble_list_person, check_errors)
 
+check_errors(text_tibble_list_person[[6]])
+
+text_tibble_list_person[[6]] |> View()
 # -------------------------------------------------------------------------
 
 text_tibble_list_person
