@@ -59,7 +59,7 @@ for (i in seq_along(files)) {
       current_string <- ""
     }
   }
-  text_strings_list[[i]] <- text_strings
+  text_strings_list[[i]] <- c(text_strings, current_string)
 }
 
 text_tibble_list <- map(text_strings_list, ~tibble(text = .))
@@ -81,6 +81,7 @@ identify_person <- function(x) {
 text_tibble_list_person <- map(text_tibble_list, identify_person)
 
 check_errors <- function(x) {
+
   index_interviewer <- which(lag(x$interviewer) == TRUE & x$interviewer == TRUE)
 
   if (length(index_interviewer) > 0) {
@@ -101,10 +102,12 @@ check_errors <- function(x) {
   if (length(index_interviewee) > 0 | length(index_interviewer) > 0) {
     stop("Check input file to see were values are repeated.")
   }
+
 }
 
 # check for errors
 map(text_tibble_list_person, check_errors)
+
 
 # -------------------------------------------------------------------------
 
