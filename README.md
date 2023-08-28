@@ -4,6 +4,8 @@
 # biogasoutcomesmalawi
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of biogasoutcomesmalawi is to provide a qualitative dataset in

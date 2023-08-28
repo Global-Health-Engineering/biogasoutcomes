@@ -31,6 +31,7 @@ library(biogasoutcomesmalawi)
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of biogasoutcomesmalawi  is to provide a qualitative dataset in a table format. The dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.
