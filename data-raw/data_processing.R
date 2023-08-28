@@ -99,21 +99,14 @@ check_errors <- function(x) {
   }
 
   if (length(index_interviewee) > 0 | length(index_interviewer) > 0) {
-    #stop("Check input file to see were values are repeated.")
+    stop("Check input file to see were values are repeated.")
   }
 }
 
-
+# check for errors
 map(text_tibble_list_person, check_errors)
 
-id <- 24
-
-check_errors(text_tibble_list_person[[id]])
-
-text_tibble_list_person[[id]] |> View()
 # -------------------------------------------------------------------------
-
-text_tibble_list_person
 
 tidy_text <- function(x) {
   x |>
@@ -123,7 +116,8 @@ tidy_text <- function(x) {
     filter(value == TRUE) |>
     select(-value) |>
     mutate(text = str_remove(text, fixed(" **Interviewer:** "))) |>
-    mutate(text = str_remove(text, fixed(" **Interviewee:** ")))
+    mutate(text = str_remove(text, fixed(" **Interviewee:** "))) |>
+    mutate(text = str_remove(text, fixed(" **Interviewee#2:** ")))
 }
 
 text_tibble_list_person_tidy <- map(text_tibble_list_person, tidy_text)
@@ -165,5 +159,4 @@ usethis::use_data(biogasoutcomes, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
 readr::write_csv(biogasoutcomes, here::here("inst", "extdata", "biogasoutcomes.csv"))
 openxlsx::write.xlsx(biogasoutcomes, here::here("inst", "extdata", "biogasoutcomes.xlsx"))
-
 
