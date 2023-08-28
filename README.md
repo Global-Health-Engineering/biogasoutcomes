@@ -79,7 +79,7 @@ Kalina, M., Ogwang, J.O., Kwangulero, J., and E. Tilley (2023)
 Uncovering biogas outcomes: tales of hubris, hope, and failure from
 southern Malawi. Natural Resources Forum.
 
-This data was used in Kalina, Ogwang, and Tilley (2022).
+This data was used in Kalina, Ogwang, and Tilley (2022):
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 
@@ -93,6 +93,8 @@ Potential to Practice: Rethinking Africa’s Biogas Revolution.”
 </div>
 
 </div>
+
+<br>
 
 ## List of documentation files
 
