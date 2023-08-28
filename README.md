@@ -1,33 +1,33 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# biogasoutcomes
+# biogasoutcomesmalawi
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of biogasoutcomes is to provide a qualitative dataset in a
-table format. The dataset consists of 61 semi-structured interviews with
-biogas owners in the Southern Region of Malawi. Interviews were
+The goal of biogasoutcomesmalawi is to provide a qualitative dataset in
+a table format. The dataset consists of 61 semi-structured interviews
+with biogas owners in the Southern Region of Malawi. Interviews were
 conducted over multiple visits to sites over the course of a two-year
 period between June 2021 and October 2022.
 
 ## Installation
 
-You can install the development version of biogasoutcomes from
+You can install the development version of biogasoutcomesmalawi from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Global-Health-Engineering/biogasoutcomes")
+devtools::install_github("openwashdata/biogasoutcomesmalawi")
 ```
 
 Alternatively, you can download the individual datasets as a CSV or XLSX
 file from the table below.
 
-| dataset        | CSV                                                                                                                  | XLSX                                                                                                                   |
-|:---------------|:---------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
-| biogasoutcomes | [Download CSV](https://github.com/Global-Health-Engineering/biogasoutcomes/raw/main/inst/extdata/biogasoutcomes.csv) | [Download XLSX](https://github.com/Global-Health-Engineering/biogasoutcomes/raw/main/inst/extdata/biogasoutcomes.xlsx) |
+| dataset              | CSV                                                                                                                 | XLSX                                                                                                                  |
+|:---------------------|:--------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| biogasoutcomesmalawi | [Download CSV](https://github.com/openwashdata/biogasoutcomesmalawi/raw/main/inst/extdata/biogasoutcomesmalawi.csv) | [Download XLSX](https://github.com/openwashdata/biogasoutcomesmalawi/raw/main/inst/extdata/biogasoutcomesmalawi.xlsx) |
 
 ## Description
 
@@ -84,7 +84,7 @@ In addition to the data from the interviews, the following files are
 provided with the data package. These files can be accessed via GitHub,
 as they are contained in:
 
-<https://github.com/Global-Health-Engineering/biogasoutcomes/tree/main/inst/extdata>
+<https://github.com/openwashdata/biogasoutcomesmalawi/tree/main/inst/extdata>
 
 ### information-letter_chichewa.docx
 
@@ -146,30 +146,27 @@ on a number of criteria including: gas pressure, flame colour, and pH
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/wasteskipsblantyre/blob/main/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/biogasoutcomesmalawi/blob/main/LICENSE.md).
 
 ## Citation
 
 Please cite using:
 
 ``` r
-citation("wasteskipsblantyre")
-#> To cite package 'wasteskipsblantyre' in publications use:
+citation("biogasoutcomesmalawi")
+#> To cite package 'biogasoutcomesmalawi' in publications use:
 #> 
-#>   Yesaya M, Msuku L, Tilley E, Loos S (2023). "wasteskipsblantyre:
-#>   Locations of Public Waste Skips in Blantyre, Malawi."
-#>   doi:10.5281/zenodo.6470427 <https://doi.org/10.5281/zenodo.6470427>,
-#>   <https://openwashdata.github.io/wasteskipsblantyre/>.
+#>   Schöbitz L, Kalina M, Ogwang J, Kwangulero J, Tilley E (2023).
+#>   "biogasoutcomes: Data for 61 semi-structured interviews with biogas
+#>   owners in Malawi."
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Misc{yesayamsuku:2023,
-#>     title = {wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi},
-#>     author = {Mabvuto Yesaya and Limbani Msuku and Elizabeth Tilley and Sebastian Camilo Loos},
+#>   @Misc{schobitzkalina:2023,
+#>     title = {biogasoutcomes: Data for 61 semi-structured interviews with biogas owners in Malawi},
+#>     author = {Lars Schöbitz and Marc Kalina and Jonathan Olal Ogwang and Jonathan Kwangulero and Elizabeth Tilley},
 #>     year = {2023},
-#>     url = {https://openwashdata.github.io/wasteskipsblantyre/},
-#>     doi = {10.5281/zenodo.6470427},
-#>     abstract = {An R data package containing the locations of public waste skips in Blantyre, Malawi.},
-#>     version = {0.0.2},
+#>     abstract = {This dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.},
+#>     version = {0.0.0.9000},
 #>   }
 ```

@@ -23,32 +23,32 @@ knitr::opts_chunk$set(
 )
 
 library(tidyverse)
-library(biogasoutcomes)
+library(biogasoutcomesmalawi)
 
 ```
 
-# biogasoutcomes
+# biogasoutcomesmalawi 
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of biogasoutcomes is to provide a qualitative dataset in a table format. The dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.
+The goal of biogasoutcomesmalawi  is to provide a qualitative dataset in a table format. The dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.
 
 ## Installation
 
-You can install the development version of biogasoutcomes from [GitHub](https://github.com/) with:
+You can install the development version of biogasoutcomesmalawi from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Global-Health-Engineering/biogasoutcomes")
+devtools::install_github("openwashdata/biogasoutcomesmalawi")
 ```
 
 Alternatively, you can download the individual datasets as a CSV or XLSX file from the table below.
 
 ```{r, echo=FALSE}
 
-extdata_path <- "https://github.com/Global-Health-Engineering/biogasoutcomes/raw/main/inst/extdata/"
+extdata_path <- "https://github.com/openwashdata/biogasoutcomesmalawi/raw/main/inst/extdata/"
 
 read_csv("data-raw/dictionary.csv") |> 
   distinct(file_name) |> 
@@ -82,7 +82,7 @@ Kalina, M., Ogwang, J.O., and E. Tilley (2022) From potential to practice: rethi
 
 In addition to the data from the interviews, the following files are provided with the data package. These files can be accessed via GitHub, as they are contained in:
 
-https://github.com/Global-Health-Engineering/biogasoutcomes/tree/main/inst/extdata
+https://github.com/openwashdata/biogasoutcomesmalawi/tree/main/inst/extdata
 
 ### information-letter_chichewa.docx
 
@@ -115,12 +115,12 @@ Description: Socio-technical site analysis of each biogas plant was conducted us
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/wasteskipsblantyre/blob/main/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/biogasoutcomesmalawi/blob/main/LICENSE.md).
 
 ## Citation
 
 Please cite using:
 
 ```{r}
-citation("wasteskipsblantyre")
+citation("biogasoutcomesmalawi")
 ```

@@ -14,4 +14,4 @@
 #'   \item{interviewee}{ The answer given by the interviewee.}
 #' }
 #'
-"biogasoutcomes"
+"biogasoutcomesmalawi"

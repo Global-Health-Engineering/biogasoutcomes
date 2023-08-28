@@ -153,13 +153,13 @@ for (i in seq_along(files)) {
 
 # -------------------------------------------------------------------------
 
-biogasoutcomes <- output_list |>
+biogasoutcomesmalawi <- output_list |>
   bind_rows() |>
   select(interview_id, interview_date, question_id, interviewer, interviewee)
 
 
-usethis::use_data(biogasoutcomes, overwrite = TRUE)
+usethis::use_data(biogasoutcomesmalawi, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(biogasoutcomes, here::here("inst", "extdata", "biogasoutcomes.csv"))
-openxlsx::write.xlsx(biogasoutcomes, here::here("inst", "extdata", "biogasoutcomes.xlsx"))
+readr::write_csv(biogasoutcomesmalawi, here::here("inst", "extdata", "biogasoutcomesmalawi.csv"))
+openxlsx::write.xlsx(biogasoutcomesmalawi, here::here("inst", "extdata", "biogasoutcomesmalawi.xlsx"))
 
