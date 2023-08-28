@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 The goal of biogasoutcomesmalawi is to provide a qualitative dataset in
@@ -72,13 +73,26 @@ Sciences and Humanities, Protocol No. P.03/21/560.
 
 ## Related publications
 
+This data was used in a publication currently under review:
+
 Kalina, M., Ogwang, J.O., Kwangulero, J., and E. Tilley (2023)
 Uncovering biogas outcomes: tales of hubris, hope, and failure from
-southern Malawi. Natural Resources Forum. (Under Review)
+southern Malawi. Natural Resources Forum.
 
-Kalina, M., Ogwang, J.O., and E. Tilley (2022) From potential to
-practice: rethinking Africa’s biogas revolution. Humanities and Social
-Sciences Communications. 9: 374.
+This data was used in Kalina, Ogwang, and Tilley (2022).
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-kalina2022" class="csl-entry">
+
+Kalina, Marc, Jonathan Òlal Ogwang, and Elizabeth Tilley. 2022. “From
+Potential to Practice: Rethinking Africa’s Biogas Revolution.”
+*Humanities and Social Sciences Communications* 9 (1).
+<https://doi.org/10.1057/s41599-022-01396-x>.
+
+</div>
+
+</div>
 
 ## List of documentation files
 
