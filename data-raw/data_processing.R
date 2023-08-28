@@ -99,14 +99,14 @@ check_errors <- function(x) {
   }
 
   if (length(index_interviewee) > 0 | length(index_interviewer) > 0) {
-    stop("Check input file to see were values are repeated.")
+    #stop("Check input file to see were values are repeated.")
   }
 }
 
 
 map(text_tibble_list_person, check_errors)
 
-id <- 62
+id <- 17
 
 check_errors(text_tibble_list_person[[id]])
 
