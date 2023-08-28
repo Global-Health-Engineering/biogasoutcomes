@@ -6,6 +6,9 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Global-Health-Engineering/biogasoutcomes/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8289621.svg)](https://doi.org/10.5281/zenodo.8289621)
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- badges: end -->
 
@@ -175,16 +178,18 @@ citation("biogasoutcomesmalawi")
 #> To cite package 'biogasoutcomesmalawi' in publications use:
 #> 
 #>   Schöbitz L, Kalina M, Ogwang J, Kwangulero J, Tilley E (2023).
-#>   "biogasoutcomes: Data for 61 semi-structured interviews with biogas
-#>   owners in Malawi."
+#>   "biogasoutcomesmalawi: Data for 61 semi-structured interviews with
+#>   biogas owners in Malawi." doi:10.5281/zenodo.8289621
+#>   <https://doi.org/10.5281/zenodo.8289621>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Misc{schobitzkalina:2023,
-#>     title = {biogasoutcomes: Data for 61 semi-structured interviews with biogas owners in Malawi},
+#>   @Misc{schobitzkalina,
+#>     title = {biogasoutcomesmalawi: Data for 61 semi-structured interviews with biogas owners in Malawi},
 #>     author = {Lars Schöbitz and Marc Kalina and Jonathan Olal Ogwang and Jonathan Kwangulero and Elizabeth Tilley},
 #>     year = {2023},
+#>     doi = {10.5281/zenodo.8289621},
 #>     abstract = {This dataset consists of 61 semi-structured interviews with biogas owners in the Southern Region of Malawi. Interviews were conducted over multiple visits to sites over the course of a two-year period between June 2021 and October 2022.},
-#>     version = {0.0.0.9000},
+#>     version = {0.0.1},
 #>   }
 ```
