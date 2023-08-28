@@ -106,7 +106,7 @@ check_errors <- function(x) {
 
 map(text_tibble_list_person, check_errors)
 
-id <- 46
+id <- 62
 
 check_errors(text_tibble_list_person[[id]])
 
