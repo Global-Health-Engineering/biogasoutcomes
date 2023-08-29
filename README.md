@@ -35,6 +35,10 @@ file from the table below.
 |:---------------------|:--------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
 | biogasoutcomesmalawi | [Download CSV](https://github.com/openwashdata/biogasoutcomesmalawi/raw/main/inst/extdata/biogasoutcomesmalawi.csv) | [Download XLSX](https://github.com/openwashdata/biogasoutcomesmalawi/raw/main/inst/extdata/biogasoutcomesmalawi.xlsx) |
 
+The original transcripts in .docx file format and converted to .md
+(markdown) file format are can be accessed from:
+<https://github.com/openwashdata/biogasoutcomesmalawi/tree/main/data-raw>
+
 ## Description
 
 Within Sub-Saharan Africa, biogas projects have seen significant
