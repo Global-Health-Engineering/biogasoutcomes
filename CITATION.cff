@@ -10,7 +10,7 @@ license: CC-BY-4.0
 title: 'biogasoutcomesmalawi: Data for 61 semi-structured interviews with biogas owners
   in Malawi'
 version: 0.0.1
-doi: 10.5281/zenodo.8289621
+doi: 10.5281/zenodo.6470427
 abstract: This dataset consists of 61 semi-structured interviews with biogas owners
   in the Southern Region of Malawi. Interviews were conducted over multiple visits
   to sites over the course of a two-year period between June 2021 and October 2022.
@@ -39,6 +39,7 @@ authors:
   given-names: Elizabeth
   email: tilleye@ethz.ch
   orcid: https://orcid.org/0000-0002-2095-9724
+date-released: '2023-09-05'
 contact:
 - family-names: Schöbitz
   given-names: Lars
