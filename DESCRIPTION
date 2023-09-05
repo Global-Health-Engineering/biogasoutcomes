@@ -4,7 +4,7 @@ Version: 0.0.1
 Authors@R: c(
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2196-5015")),
-    person("Sebastian Camilo", "Loos", , "seba.loos@hotmail.com", role = "ctr",
+    person("Sebastian Camilo", "Loos", , "seba.loos@hotmail.com", role = "aut",
            comment = c(ORCID = "0000-0002-8830-1734")),
     person("Marc", "Kalina", , "mkalina@ethz.ch", role = "aut",
            comment = c(ORCID = "0000-0002-6335-3845")),

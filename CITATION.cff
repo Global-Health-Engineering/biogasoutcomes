@@ -19,6 +19,10 @@ authors:
   given-names: Lars
   email: lschoebitz@ethz.ch
   orcid: https://orcid.org/0000-0003-2196-5015
+- family-names: Loos
+  given-names: Sebastian Camilo
+  email: seba.loos@hotmail.com
+  orcid: https://orcid.org/0000-0002-8830-1734
 - family-names: Kalina
   given-names: Marc
   email: mkalina@ethz.ch
@@ -35,7 +39,6 @@ authors:
   given-names: Elizabeth
   email: tilleye@ethz.ch
   orcid: https://orcid.org/0000-0002-2095-9724
-date-released: '2023-08-28'
 contact:
 - family-names: Schöbitz
   given-names: Lars

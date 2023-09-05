@@ -30,5 +30,3 @@ meta$Encoding <- "UTF-8"
 
 utils::readCitationFile(path_cit, meta)
 
-# Start of inst/CITATION
-utils::readCitationFile("inst/CITATION")
